@@ -2984,12 +2984,23 @@ h1 + .tabs-line {
 .parallax-content {
 	position: relative;
 	z-index: 1;
+	background-color: #1515156c;
+}
+
+.parallax-content h2 {
+	color: #f7f7f7;
+	font-size: 48px;
+	font-weight: 800;
+	padding: 0 200px 20px;
 }
 
 .parallax-content p {
 	color: #fff;
 	font-size: 16px;
 	letter-spacing: 0.7px;
+	background-color: #15151596;
+	padding: 20px;
+	border-radius: 10px;
 }
 
 .parallax-content .book-button {
@@ -3006,7 +3017,12 @@ h1 + .tabs-line {
 	width: 100%;
 }
 
-
+@media (max-width: 768px) {
+	.parallax-content h2 {
+		font-size: 28px;
+		padding: 0 10px 20px;
+	}
+}
 
 /* Our Services */
 
