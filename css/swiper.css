@@ -1,7 +1,7 @@
 .slider-container {
     max-width: 75rem;
     width: 100%;
-    padding: 4rem 2rem;
+    padding: 7rem 2rem 5rem;
     margin: 0 auto;
 }
 
@@ -22,6 +22,18 @@
     -o-object-fit: cover;
     object-fit: cover;
 }
+.slider-main .slider-container .swiper-container .swiper-wrapper .swiper-slide .card-image h3 {
+    margin-top: -232px;
+    position: absolute;
+    padding: 0 2rem;
+    color: #fff;
+    font-size: 36px;
+	text-transform: uppercase;
+    letter-spacing: 15px;
+}
+.slider-main .slider-container .swiper-container {
+    border-radius: 10px;
+}
 .slider-main .slider-container .swiper-container .swiper-pagination-bullet {
     opacity: 0.8;
     background: #252a32;
@@ -41,4 +53,12 @@
 .slider-main .slider-container .swiper-container .swiper-button-prev .arrow-icon {
     font-size: 2rem;
     color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .slider-main .slider-container .swiper-container .swiper-wrapper .swiper-slide .card-image h3 {
+        margin-top: -117px;
+        padding: 0 4.5rem;
+        letter-spacing: 8px;
+    }
 }
