@@ -13,9 +13,17 @@
 
     <!-- Stylesheets-->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/gallery.css">
+
+    <!-- CDN Links -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+
+    <!-- FontAwesom -->
+    <script src="https://kit.fontawesome.com/3c765fd7fd.js" crossorigin="anonymous"></script>
     
 </head>
 
@@ -43,88 +51,39 @@
                 </ul>
             </nav>
         </header>
+
         <!-- Breadcrumbs -->
         <section class="breadcrumbs-custom-inset">
-            <div class="breadcrumbs-custom context-dark bg-overlay-60">
+            <div class="breadcrumbs-custom">
                 <div class="container">
                     <h2 class="breadcrumbs-custom-title">About</h2>
                     <ul class="breadcrumbs-custom-path">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li class="active">About</li>
                     </ul>
                 </div>
                 <div class="box-position" style="background-image: url(images/breadcrumbs-bg.jpg);"></div>
             </div>
         </section>
+
         <!-- Why choose us-->
-        <section class="section section-sm section-first bg-default text-md-left">
+        <section class="section section-sm section-first  text-md-left">
             <div class="container">
                 <div class="row row-50 justify-content-center align-items-xl-center">
-                    <div class="col-md-10 col-lg-5 col-xl-6"><img src="images/about-1-519x564.jpg" alt="" width="519" height="564" />
+                    <div class="col-md-10 col-lg-5 col-xl-6">
+                        <img class="discover-img" src="images/about-1-519x564.jpg" alt=""/>
                     </div>
                     <div class="col-md-10 col-lg-7 col-xl-6">
-                        <h1 class="text-spacing-25 font-weight-normal title-opacity-9">Why choose us</h1>
-                        <!-- Bootstrap tabs-->
-                        <div class="tabs-custom tabs-horizontal tabs-line" id="tabs-4">
-                            <!-- Nav tabs-->
+                        <h1 class="">Why choose us</h1>
+
+                        <div class="tabs-custom tabs-line about-content">
                             <ul class="nav nav-tabs">
-                                <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-4-1" data-toggle="tab">Experience</a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-4-2" data-toggle="tab">Skills</a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-4-3" data-toggle="tab">Mission</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link">Experience - Mission</a></li>
                             </ul>
                             <!-- Tab panes-->
                             <div class="tab-content">
-                                <div class="tab-pane fade show active" id="tabs-4-1">
+                                <div class="tab-pane fade show active">
                                     <p>Aliquam malesuada bibendum arcu vitae elementum curabitur. A erat nam at lectus urna duis convallis convallis tellus. Sit amet consectetur adipiscing elit pellentesque.</p>
-                                    <!-- Linear progress bar-->
-                                    <article class="progress-linear progress-secondary">
-                                        <div class="progress-header">
-                                            <p>Tours</p>
-                                        </div>
-                                        <div class="progress-bar-linear-wrap">
-                                            <div class="progress-bar-linear" data-gradient=""><span class="progress-value">79</span><span class="progress-marker"></span></div>
-                                        </div>
-                                    </article>
-                                    <!-- Linear progress bar-->
-                                    <article class="progress-linear progress-orange">
-                                        <div class="progress-header">
-                                            <p>Excursions</p>
-                                        </div>
-                                        <div class="progress-bar-linear-wrap">
-                                            <div class="progress-bar-linear" data-gradient=""><span class="progress-value">72</span><span class="progress-marker"></span></div>
-                                        </div>
-                                    </article>
-                                    <!-- Linear progress bar-->
-                                    <article class="progress-linear">
-                                        <div class="progress-header">
-                                            <p>Hotel Bookings</p>
-                                        </div>
-                                        <div class="progress-bar-linear-wrap">
-                                            <div class="progress-bar-linear" data-gradient=""><span class="progress-value">88</span><span class="progress-marker"></span></div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="tab-pane fade" id="tabs-4-2">
-                                    <div class="row row-40 justify-content-center text-center inset-top-10">
-                                        <div class="col-sm-4">
-                                            <!-- Circle Progress Bar-->
-                                            <div class="progress-bar-circle" data-value="0.87" data-gradient="#01b3a7" data-empty-fill="transparent" data-size="150" data-thickness="12" data-reverse="true"><span></span></div>
-                                            <p class="progress-bar-circle-title">Tours</p>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <!-- Circle Progress Bar-->
-                                            <div class="progress-bar-circle" data-value="0.74" data-gradient="#01b3a7" data-empty-fill="transparent" data-size="150" data-thickness="12" data-reverse="true"><span></span></div>
-                                            <p class="progress-bar-circle-title">Excursions</p>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <!-- Circle Progress Bar-->
-                                            <div class="progress-bar-circle" data-value="0.99" data-gradient="#01b3a7" data-empty-fill="transparent" data-size="150" data-thickness="12" data-reverse="true"><span></span></div>
-                                            <p class="progress-bar-circle-title">Hotel Bookings</p>
-                                        </div>
-                                    </div>
-                                    <div class="group-md group-middle"><a class="button button-width-xl-230 button-primary button-pipaluk" href="#">Get in touch</a><a class="button button-black-outline button-width-xl-230" href="#">Read more</a></div>
-                                </div>
-                                <div class="tab-pane fade" id="tabs-4-3">
                                     <p>Orci nulla pellentesque dignissim enim sit. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Nibh mauris cursus mattis molestie a iaculis at erat pellentesque.</p>
                                     <div class="text-center text-sm-left offset-top-30 tab-height">
                                         <ul class="row-16 list-0 list-custom list-marked list-marked-sm list-marked-secondary">
@@ -136,7 +95,10 @@
                                             <li>Ut venenatis</li>
                                         </ul>
                                     </div>
-                                    <div class="group-md group-middle"><a class="button button-width-xl-230 button-primary button-pipaluk" href="#">Get in touch</a><a class="button button-black-outline button-md" href="#">Download presentation</a></div>
+                                    <div class="group-md group-middle">
+                                        <a class="button contact-button" href="/contact-us.html">Get in Touch</a>
+                                        <a class="button about-button" href="#">Download Presentation</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -145,250 +107,190 @@
             </div>
         </section>
 
-        <!-- Latest Projects-->
-        <section class="section section-sm section-fluid bg-default">
-            <div class="container">
-                <h3>Destinations</h3>
-            </div>
-            <!-- Owl Carousel-->
-            <div class="owl-carousel owl-classic owl-timeline" data-items="1" data-md-items="2" data-lg-items="3" data-xl-items="4" data-margin="30" data-autoplay="false" data-nav="true" data-dots="true">
+        <!--	Gallery Section -->
+        <section class="section section-sm bg-gray">
+            <div class="container-fluid">
+                <h3 class="gallery-title">
+                    <span class="d-inline-block">Gallery</span>
+                </h3>
                 
-                <!-- Place 1 -->
-                <div class="owl-item">
-                    <article class="thumbnail thumbnail-mary">
-                        <div class="thumbnail-mary-figure">
-                            <img src="images/gallery-image-11-420x308.jpg" alt="" width="420" height="308" />
-                        </div>
-                        <div class="thumbnail-mary-caption">
-                            <a class="icon fl-bigmug-line-zoom60" href="images/gallery-image-11-1200x800-original.jpg" data-lightgallery="item">
-                                <img src="images/gallery-image-11-420x308.jpg" alt="" width="420" height="308" />
-                            </a>
-                        </div>
-                    </article>
-                    <div class="thumbnail-mary-description">
-                        <h5 class="thumbnail-mary-project">
-                            <a href="#">France</a>
-                        </h5>
-                        <span class="thumbnail-mary-decor"></span>
-                        <h5 class="thumbnail-mary-time">
-                        </h5>
-                    </div>
-                </div>
+                <div class="gallery gallery-section">
+                    <figure>
+                        <img src="https://cdn.pixabay.com/photo/2016/02/19/15/46/labrador-retriever-1210559__340.jpg" alt="">
+                        <figcaption class="gallery-caption" role="presentation">
+                            <h1 class="title">Dog: Miss Sunshine</h1>
+                            <h2 class="title">6 years old</h2>
+                        </figcaption>
+                    </figure>
 
-                <!-- Place 2 -->
-                <div class="owl-item">
-                    <article class="thumbnail thumbnail-mary">
-                        <div class="thumbnail-mary-figure">
-                            <img src="images/gallery-image-12-420x308.jpg" alt="" width="420" height="308" />
-                        </div>
-                        <div class="thumbnail-mary-caption">
-                            <a class="icon fl-bigmug-line-zoom60" href="images/gallery-image-12-1200x800-original.jpg" data-lightgallery="item">
-                                <img src="images/gallery-image-12-420x308.jpg" alt="" width="420" height="308" />
-                            </a>
-                        </div>
-                    </article>
-                    <div class="thumbnail-mary-description">
-                        <h5 class="thumbnail-mary-project">
-                            <a href="#">Italy</a>
-                        </h5>
-                        <span class="thumbnail-mary-decor"></span>
-                        <h5 class="thumbnail-mary-time">
-                        </h5>
-                    </div>
-                </div>
+                    <figure>
+                        <img src="https://cdn.pixabay.com/photo/2018/03/27/17/25/cat-3266673__340.jpg" alt="">
+                        <figcaption class="gallery-caption" role="presentation">
+                            <h1 class="title">Kitten: Reese</h1>
+                            <h2 class="title">8 weeks old</h2>
+                        </figcaption>
+                    </figure>
+            
+                    <figure>
+                        <img src="https://cdn.pixabay.com/photo/2019/07/31/19/21/hare-4375952__340.jpg" alt="">
+                        <figcaption class="gallery-caption" role="presentation">
+                            <h1 class="title">Bunny: Sofia</h1>
+                            <h2 class="title">3 years old</h2>
+                        </figcaption>
+                    </figure>
 
-                <!-- Place 3 -->
-                <div class="owl-item">
-                    <article class="thumbnail thumbnail-mary">
-                        <div class="thumbnail-mary-figure">
-                            <img src="images/gallery-image-13-420x308.jpg" alt="" width="420" height="308" />
-                        </div>
-                        <div class="thumbnail-mary-caption">
-                            <a class="icon fl-bigmug-line-zoom60" href="images/gallery-image-13-1200x800-original.jpg" data-lightgallery="item">
-                                <img src="images/gallery-image-13-420x308.jpg" alt="" width="420" height="308" />
-                            </a>
-                        </div>
-                    </article>
-                    <div class="thumbnail-mary-description">
-                        <h5 class="thumbnail-mary-project">
-                            <a href="#">Egypt</a>
-                        </h5>
-                        <span class="thumbnail-mary-decor"></span>
-                        <h5 class="thumbnail-mary-time">
-                        </h5>
-                    </div>
-                </div>
+                    <figure>
+                        <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554__340.jpg" alt="">
+                        <figcaption class="gallery-caption" role="presentation">
+                            <h1 class="title">Kitten: Katie</h1>
+                            <h2 class="title">1 years old</h2>
+                        </figcaption>
+                    </figure>
+            
+                    <figure>
+                        <img src="https://cdn.pixabay.com/photo/2017/09/25/13/12/cocker-spaniel-2785074__480.jpg" alt="">
+                        <figcaption class="gallery-caption" role="presentation">
+                            <h1 class="title">Puppy: Bruce</h1>
+                            <h2 class="title">10 weeks old</h2>
+                        </figcaption>
+                    </figure>
 
-                <!-- Place 4 -->
-                <div class="owl-item">
-                    <article class="thumbnail thumbnail-mary">
-                        <div class="thumbnail-mary-figure">
-                            <img src="images/gallery-image-14-420x308.jpg" alt="" width="420" height="308" />
-                        </div>
-                        <div class="thumbnail-mary-caption">
-                            <a class="icon fl-bigmug-line-zoom60" href="images/gallery-image-14-1200x800-original.jpg" data-lightgallery="item">
-                                <img src="images/gallery-image-14-420x308.jpg" alt="" width="420" height="308" />
-                            </a>
-                        </div>
-                    </article>
-                    <div class="thumbnail-mary-description">
-                        <h5 class="thumbnail-mary-project">
-                            <a href="#">Dubai</a>
-                        </h5>
-                        <span class="thumbnail-mary-decor"></span>
-                        <h5 class="thumbnail-mary-time">
-                        </h5>
-                    </div>
+                    <figure>
+                        <img src="https://cdn.pixabay.com/photo/2016/11/21/16/59/animal-1846462__340.jpg" alt="">
+                        <figcaption class="gallery-caption" role="presentation">
+                            <h1 class="title">Bunny: Jeff</h1>
+                            <h2 class="title">2 years old</h2>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554__340.jpg" alt="">
+                        <figcaption class="gallery-caption" role="presentation">
+                            <h1 class="title">Kitten: Katie</h1>
+                            <h2 class="title">1 years old</h2>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
 
         <!-- What people Say-->
-        <section class="section section-sm section-last bg-default">
-            <div class="container">
-                <h3>What People Say</h3>
-                <!-- Owl Carousel-->
-                <div class="owl-carousel owl-modern" data-items="1" data-stage-padding="15" data-margin="30" data-dots="true" data-animation-in="fadeIn" data-animation-out="fadeOut" data-autoplay="true">
-                    <!-- Quote Lisa-->
-                    <article class="quote-lisa">
-                        <div class="quote-lisa-body"><a class="quote-lisa-figure" href="#"><img class="img-circles" src="images/user-16-100x100.jpg" alt="" width="100" height="100" /></a>
-                            <div class="quote-lisa-text">
-                                <p class="q">Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Diam phasellus vestibulum lorem sed risus ultricies. Aenean et tortor at risus viverra adipiscing. Aliquet enim tortor at auctor urna. Tortor aliquam nulla facilisi cras fermentum. Malesuada pellentesque elit eget gravida cum sociis natoque.</p>
+        <section class="section section-sm">
+            <h3>What People Say</h3>
+            <div class="slider-main">
+                <div class="slider-container">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <article class="quote-lisa">
+                                    <div class="quote-lisa-body"><a class="quote-lisa-figure" href="#"><img class="img-circles" src="images/user-16-100x100.jpg" alt="" width="100" height="100" /></a>
+                                        <div class="quote-lisa-text">
+                                            <p class="q">Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Diam phasellus vestibulum lorem sed risus ultricies. Aenean et tortor at risus viverra adipiscing. Aliquet enim tortor at auctor urna. Tortor aliquam nulla facilisi cras fermentum. Malesuada pellentesque elit eget gravida cum sociis natoque.</p>
+                                        </div>
+                                        <h5 class="quote-lisa-cite"><a href="#">Catherine Williams</a></h5>
+                                        <p class="quote-lisa-status">Regular Client</p>
+                                    </div>
+                                </article>
                             </div>
-                            <h5 class="quote-lisa-cite"><a href="#">Catherine Williams</a></h5>
-                            <p class="quote-lisa-status">Regular Client</p>
+                            <div class="swiper-slide">
+                                <article class="quote-lisa">
+                                    <div class="quote-lisa-body"><a class="quote-lisa-figure" href="#"><img class="img-circles" src="images/user-17-100x100.jpg" alt="" width="100" height="100" /></a>
+                                        <div class="quote-lisa-text">
+                                            <p class="q">Sodales ut etiam sit amet nisl purus. Maecenas accumsan lacus vel facilisis volutpat est. Suscipit adipiscing bibendum est ultricies integer quis auctor. Viverra aliquet eget sit amet tellus cras adipiscing. Posuere ac ut consequat semper viverra nam libero justo laoreet. Iaculis eu non diam phasellus vestibulum lorem sed risus ultricies.</p>
+                                        </div>
+                                        <h5 class="quote-lisa-cite"><a href="#">Rupert Wood</a></h5>
+                                        <p class="quote-lisa-status">Regular Client</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="quote-lisa">
+                                    <div class="quote-lisa-body"><a class="quote-lisa-figure" href="#"><img class="img-circles" src="images/user-18-100x100.jpg" alt="" width="100" height="100" /></a>
+                                        <div class="quote-lisa-text">
+                                            <p class="q">Lacus vestibulum sed arcu non odio euismod lacinia. Pellentesque elit ullamcorper dignissim cras. Ultrices eros in cursus turpis massa tincidunt dui. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Commodo odio aenean sed adipiscing diam. Sed euismod nisi porta lorem mollis aliquam.</p>
+                                        </div>
+                                        <h5 class="quote-lisa-cite"><a href="#">Samantha Brown</a></h5>
+                                        <p class="quote-lisa-status">Regular Client</p>
+                                    </div>
+                                </article>
+                            </div>
                         </div>
-                    </article>
-                    <!-- Quote Lisa-->
-                    <article class="quote-lisa">
-                        <div class="quote-lisa-body"><a class="quote-lisa-figure" href="#"><img class="img-circles" src="images/user-17-100x100.jpg" alt="" width="100" height="100" /></a>
-                            <div class="quote-lisa-text">
-                                <p class="q">Sodales ut etiam sit amet nisl purus. Maecenas accumsan lacus vel facilisis volutpat est. Suscipit adipiscing bibendum est ultricies integer quis auctor. Viverra aliquet eget sit amet tellus cras adipiscing. Posuere ac ut consequat semper viverra nam libero justo laoreet. Iaculis eu non diam phasellus vestibulum lorem sed risus ultricies.</p>
-                            </div>
-                            <h5 class="quote-lisa-cite"><a href="#">Rupert Wood</a></h5>
-                            <p class="quote-lisa-status">Regular Client</p>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Scrollbar -->
+                        <div class="swiper-button-next">
+                            <i class="fas fa-chevron-circle-right arrow-icon"></i>
                         </div>
-                    </article>
-                    <!-- Quote Lisa-->
-                    <article class="quote-lisa">
-                        <div class="quote-lisa-body"><a class="quote-lisa-figure" href="#"><img class="img-circles" src="images/user-18-100x100.jpg" alt="" width="100" height="100" /></a>
-                            <div class="quote-lisa-text">
-                                <p class="q">Lacus vestibulum sed arcu non odio euismod lacinia. Pellentesque elit ullamcorper dignissim cras. Ultrices eros in cursus turpis massa tincidunt dui. Nunc pulvinar sapien et ligula ullamcorper malesuada proin. Commodo odio aenean sed adipiscing diam. Sed euismod nisi porta lorem mollis aliquam.</p>
-                            </div>
-                            <h5 class="quote-lisa-cite"><a href="#">Samantha Brown</a></h5>
-                            <p class="quote-lisa-status">Regular Client</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <!--Counters-->
-        <!-- Counter Classic-->
-        <section class="section section-fluid bg-default">
-            <div class="parallax-container" data-parallax-img="images/bg-counter-2.jpg">
-                <div class="parallax-content section-xl context-dark bg-overlay-26">
-                    <div class="container">
-                        <div class="row row-50 justify-content-center border-classic">
-                            <div class="col-sm-6 col-md-5 col-lg-3">
-                                <div class="counter-classic">
-                                    <div class="counter-classic-number"><span class="counter">12</span>
-                                    </div>
-                                    <h5 class="counter-classic-title">Awards</h5>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-5 col-lg-3">
-                                <div class="counter-classic">
-                                    <div class="counter-classic-number"><span class="counter">194</span>
-                                    </div>
-                                    <h5 class="counter-classic-title">Tours</h5>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-5 col-lg-3">
-                                <div class="counter-classic">
-                                    <div class="counter-classic-number"><span class="counter">2</span><span class="symbol">k</span>
-                                    </div>
-                                    <h5 class="counter-classic-title">Travelers</h5>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-5 col-lg-3">
-                                <div class="counter-classic">
-                                    <div class="counter-classic-number"><span class="counter">25</span>
-                                    </div>
-                                    <h5 class="counter-classic-title">Team members</h5>
-                                </div>
-                            </div>
+                        <div class="swiper-button-prev">
+                            <i class="fas fa-chevron-circle-left arrow-icon"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Page Footer--><a class="banner" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" target="_blank"><img src="images/intense_big_02.jpg" alt="" /></a>
-        <footer class="section footer-corporate context-dark">
+        <!-- Footer Section -->
+        <footer class="section footer-corporate">
             <div class="footer-corporate-inset">
                 <div class="container">
                     <div class="row row-40 justify-content-lg-between">
                         <div class="col-sm-6 col-md-12 col-lg-3 col-xl-4">
-                            <div class="oh-desktop">
-                                <div class="wow slideInRight" data-wow-delay="0s">
-                                    <h6 class="text-spacing-100 text-uppercase">Contact us</h6>
+                            <div class="">
+                                <h6 class="text-spacing-100 text-uppercase">Contact us</h6>
                                     <ul class="footer-contacts d-inline-block d-sm-block">
                                         <li>
                                             <div class="unit">
-                                                <div class="unit-left"><span class="icon fa fa-phone"></span></div>
-                                                <div class="unit-body"><a class="link-phone" href="tel:#">+1 323-913-4688</a></div>
+                                                <div class="unit-left"><i class="fa-solid fa-phone"></i></div>
+                                                <div class="unit-body"><a class="link-phone" href="tel:+94775737782">+94 77 573 7782</a></div>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="unit">
-                                                <div class="unit-left"><span class="icon fa fa-envelope"></span></div>
-                                                <div class="unit-body"><a class="link-aemail" href="mailto:#">info@demolink.org</a></div>
+                                                <div class="unit-left"><i class="fa-solid fa-envelope"></i></div>
+                                                <div class="unit-body"><a class="link-aemail" href="mailto:info@codice-tour.cf">info@codice-tour.cf</a></div>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="unit">
-                                                <div class="unit-left"><span class="icon fa fa-location-arrow"></span></div>
-                                                <div class="unit-body"><a class="link-location" href="#">4730 Crystal Springs Dr, Los Angeles, CA 90027</a></div>
+                                                <div class="unit-left"><i class="fa-solid fa-location-arrow"></i></div>
+                                                <div class="unit-body"><a class="link-location" href="#">University of Kelaniya, Dalugama, Sri Lanka</a></div>
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-5 col-lg-3 col-xl-4">
-                            <div class="oh-desktop">
-                                <div class="wow slideInDown" data-wow-delay="0s">
-                                    <h6 class="text-spacing-100 text-uppercase">Popular news</h6>
-                                    <!-- Post Minimal 2-->
-                                    <article class="post post-minimal-2">
-                                        <p class="post-minimal-2-title"><a href="#">Your Personal Guide to 5 Best Places to Visit on Earth</a></p>
-                                        <div class="post-minimal-2-time">
-                                            <time datetime="2019-05-04">May 04, 2019</time>
-                                        </div>
-                                    </article>
-                                    <!-- Post Minimal 2-->
-                                    <article class="post post-minimal-2">
-                                        <p class="post-minimal-2-title"><a href="#">Top 10 Hotels: Rating by Wonder Tour Travel Experts</a></p>
-                                        <div class="post-minimal-2-time">
-                                            <time datetime="2019-05-04">May 04, 2019</time>
-                                        </div>
-                                    </article>
-                                </div>
+                            <div class="">
+                                <h6 class="text-spacing-100 text-uppercase">Popular news</h6>
+                                <!-- Post Minimal 2-->
+                                <article class="post post-minimal-2">
+                                    <p class="post-minimal-2-title"><a href="#">Personal Guide to 5 Best Places to Visit in Sri Lanka</a></p>
+                                    <div class="post-minimal-2-time">
+                                        <time datetime="2019-05-04">May 04, 2019</time>
+                                    </div>
+                                </article>
+                                <!-- Post Minimal 2-->
+                                <article class="post post-minimal-2">
+                                    <p class="post-minimal-2-title"><a href="#">Top 10 Hotels: Rating by CODICE Tour Travel Experts</a></p>
+                                    <div class="post-minimal-2-time">
+                                        <time datetime="2019-05-04">May 04, 2019</time>
+                                    </div>
+                                </article>
                             </div>
                         </div>
                         <div class="col-sm-11 col-md-7 col-lg-5 col-xl-4">
-                            <div class="oh-desktop">
-                                <div class="wow slideInLeft" data-wow-delay="0s">
-                                    <h6 class="text-spacing-100 text-uppercase">Quick links</h6>
-                                    <ul class="row-6 list-0 list-marked list-marked-md list-marked-secondary list-custom-2">
-                                        <li><a href="about.html">About us</a></li>
+                            <div class="">
+                                <h6 class="text-spacing-100 text-uppercase">Quick links</h6>
+                                    <ul class="row-6 list-marked list-custom-2">
+                                        <li><a href="/about.html">About us</a></li>
                                         <li><a href="#">Our Tours</a></li>
                                         <li><a href="#">Our Team</a></li>
                                         <li><a href="#">Gallery</a></li>
                                         <li><a href="#">Blog</a></li>
                                     </ul>
-                                    <div class="group-md group-middle justify-content-sm-start"><a class="button button-lg button-primary button-ujarak" href="#">Get in touch</a></div>
-                                </div>
+                                    <div class="group-md group-middle">
+                                        <a class="button Footer-button" href="/contact-us.html">Get in Touch</a>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -398,18 +300,17 @@
                 <div class="container">
                     <div class="row justfy-content-xl-space-berween row-10 align-items-md-center2">
                         <div class="col-sm-6 col-md-4 text-sm-right text-md-center">
-                            <div>
+                            <div class="slider-text">
                                 <ul class="list-inline list-inline-sm footer-social-list-2">
-                                    <li><a class="icon fa fa-facebook" href="#"></a></li>
-                                    <li><a class="icon fa fa-twitter" href="#"></a></li>
-                                    <li><a class="icon fa fa-google-plus" href="#"></a></li>
-                                    <li><a class="icon fa fa-instagram" href="#"></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4 order-sm-first">
-                            <!-- Rights-->
-                            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Wonder Tour</span>. All Rights Reserved. Design by <a href="https://www.templatemonster.com">TemplateMonster</a></p>
+                            <p class="rights"><span>©&nbsp;</span><span class="copyright-year">2022</span><span>&nbsp;</span><span>Wonder Tour</span>. Design by <a href="https://www.vinojan.gq/">Vinojan Abhimanyu</a></p>
                         </div>
                         <div class="col-sm-6 col-md-4 text-md-right">
                             <p class="rights"><a href="#">Privacy Policy</a></p>
@@ -418,10 +319,41 @@
                 </div>
             </div>
         </footer>
+
     </div>
     
     <!-- Javascript-->
     <script src="js/nav.js"></script>
+
+    <!-- Swiper Configuration -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js'></script>
+    <script id="rendered-js" >
+        var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 1.5,
+        spaceBetween: 10,
+        centeredSlides: true,
+        freeMode: true,
+        grabCursor: true,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true },
+
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false },
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev" },
+
+        breakpoints: {
+            500: {
+            slidesPerView: 1 },
+
+            700: {
+            slidesPerView: 1.5 } } });
+    </script>
     
 </body>
 
