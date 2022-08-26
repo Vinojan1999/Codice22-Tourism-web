@@ -11,11 +11,12 @@ nav{
 
 /*Styling logo*/
 .logo{
-    padding: 12px 70px;
+    padding: 16px 75px;
     text-align: center;
 }
 .logo img {
-	height: 3rem;
+	height: 2.5rem;
+    width: 12rem;
 }
 
 /*Styling Links*/
@@ -96,7 +97,7 @@ nav{
         z-index: 3;
     }
 	.logo{
-		padding: 12px 22px;
+		padding: 15px 22px;
 		text-align: center;
 	}
     .hamburger{
