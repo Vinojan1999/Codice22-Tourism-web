@@ -22,15 +22,6 @@
     -o-object-fit: cover;
     object-fit: cover;
 }
-.slider-main .slider-container .swiper-container .swiper-wrapper .swiper-slide .card-image h3 {
-    margin-top: -232px;
-    position: absolute;
-    padding: 0 2rem;
-    color: #fff;
-    font-size: 36px;
-	text-transform: uppercase;
-    letter-spacing: 15px;
-}
 .slider-main .slider-container .swiper-container {
     border-radius: 10px;
 }
@@ -55,10 +46,8 @@
     color: #ffffff;
 }
 
-@media (max-width: 768px) {
-    .slider-main .slider-container .swiper-container .swiper-wrapper .swiper-slide .card-image h3 {
-        margin-top: -117px;
-        padding: 0 4.5rem;
-        letter-spacing: 8px;
+@media (min-width: 768px) {
+    .slider-main .slider-container .swiper-container .swiper-wrapper .swiper-slide .card-image img {
+        height: 75vh;
     }
 }

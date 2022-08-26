@@ -11,11 +11,11 @@ nav{
 
 /*Styling logo*/
 .logo{
-    padding: 22px 70px;
+    padding: 12px 70px;
     text-align: center;
 }
 .logo img {
-	width: 20rem;
+	height: 3rem;
 }
 
 /*Styling Links*/
@@ -51,6 +51,9 @@ nav{
     position: absolute;
     transition: all ease-in-out 250ms;
     margin: 0 0 0 10%;
+
+    /* For Google Chrome Browser */
+    top: 23px;
 }
 .nav-links li .nav-page:hover::before{
     width: 80%;
@@ -93,7 +96,7 @@ nav{
         z-index: 3;
     }
 	.logo{
-		padding: 22px;
+		padding: 12px 22px;
 		text-align: center;
 	}
     .hamburger{
@@ -151,15 +154,4 @@ nav{
     li.nav-fade{
         opacity: 1;
     }
-}
-/*Animating Hamburger Icon on Click*/
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
-}
-.toggle .line2{
-    transition: all 0.7s ease;
-    width:0;
-}
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
 }
