@@ -81,7 +81,7 @@ nav{
 /*Styling Hamburger Icon*/
 .hamburger div{
     width: 30px;
-    height:3px;
+    height: 3px;
     background: #151515;
     margin: 5px;
     transition: all 0.3s ease;
@@ -155,4 +155,16 @@ nav{
     li.nav-fade{
         opacity: 1;
     }
+}
+
+/*Animating Hamburger Icon on Click*/
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    transition: all 0.7s ease;
+    width:0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
 }
